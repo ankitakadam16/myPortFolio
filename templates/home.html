@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+ <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style>
+  /***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+body {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic  {
+  padding-left:50px;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="row profile">
+  		<div class="col-md-3">
+  			<div class="profile-sidebar">
+  				<!-- SIDEBAR USERPIC -->
+  				<div class="profile-userpic">
+  					<img src="https://scontent.fblr5-1.fna.fbcdn.net/v/t1.0-1/c0.62.160.160/p160x160/27750096_1444081532369965_2783240621114773383_n.jpg?_nc_cat=0&oh=8c0d5f4cc55f29743a37482122e35e9d&oe=5B7B50D0" style="border-radius: 50%;" alt="Ankita Kadam">
+  				</div>
+  				<!-- END SIDEBAR USERPIC -->
+  				<!-- SIDEBAR USER TITLE -->
+  				<div class="profile-usertitle">
+  					<div class="profile-usertitle-name">
+  						Ankita Shivanand Kadam
+  					</div>
+  					<div class="profile-usertitle-job">
+  						ksankita16@gmail.com
+  					</div>
+            <div class="profile-usertitle-job">
+              8792706346
+            </div>
+  				</div>
+
+  				<!-- END SIDEBAR BUTTONS -->
+  				<!-- SIDEBAR MENU -->
+  				<div class="profile-usermenu">
+  					<ul class="nav">
+  						<li class="active">
+  							<a href="#profile">
+  							<i class="glyphicon glyphicon-home"></i>
+  							Objective</a>
+  						</li>
+  						<li>
+  							<a href="#summary">
+  							<i class="glyphicon glyphicon-user"></i>
+  							Professional Summary </a>
+  						</li>
+  						<li>
+  							<a href="#" target="_blank">
+  							<i class="glyphicon glyphicon-ok"></i>
+  							Educational Qualification </a>
+  						</li>
+  						<li>
+  							<a href="#">
+  							<i class="glyphicon glyphicon-flag"></i>
+  							Skills </a>
+  						</li>
+              <li>
+  							<a href="#">
+  							<i class="glyphicon glyphicon-flag"></i>
+  							Personal Qualities </a>
+  						</li>
+              <li>
+                <a href="#">
+                <i class="glyphicon glyphicon-flag"></i>
+                Personal Details </a>
+              </li>
+              <li>
+                <div class="row" style="padding-top:20px">
+                  <div class="col-md-6 text-right">
+                    <a href="https://www.facebook.com/ankita.kadam.52012">
+                      <i class="fa fa-facebook"></i></a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="https://in.linkedin.com/in/ankita-kadam-9b31b645">
+                      <i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </li>
+  					</ul>
+  				</div>
+  				<!-- END MENU -->
+  			</div>
+  		</div>
+  		<div class="col-md-9">
+              <div class="profile-content" id="profile">
+  			   I want to secure a challenging position that allows me to get perfection in the field of IT and to explore my strengths and skills which would help me to grow as a professional and thereby contributing towards enhancement of the company.
+              </div>
+              <div class="profile-content" id="summary">
+igjkjfkjfjghkj
+                            </div>
+  		</div>
+  	</div>
+  </div>
+</body>
+</html>
