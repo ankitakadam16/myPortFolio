@@ -9,6 +9,7 @@
  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <script src="index.js"></script>
   <style>
   /***
 User Profile Sidebar by @keenthemes
@@ -118,8 +119,8 @@ body {
 }
   </style>
 </head>
-<body>
-  <div class="container">
+<body ng-app="myPortfolio">
+  <div class="container" ng-controller = "firstController">
       <div class="row profile">
   		<div class="col-md-3">
   			<div class="profile-sidebar">
@@ -131,13 +132,13 @@ body {
   				<!-- SIDEBAR USER TITLE -->
   				<div class="profile-usertitle">
   					<div class="profile-usertitle-name">
-  						Ankita Shivanand Kadam
+  						{{name}}
   					</div>
   					<div class="profile-usertitle-job">
-  						ksankita16@gmail.com
+  						{{email}}
   					</div>
             <div class="profile-usertitle-job">
-              8792706346
+              {{phone}}
             </div>
   				</div>
 
@@ -193,12 +194,12 @@ body {
   			</div>
   		</div>
   		<div class="col-md-9">
-              <div class="profile-content" id="profile">
-  			   I want to secure a challenging position that allows me to get perfection in the field of IT and to explore my strengths and skills which would help me to grow as a professional and thereby contributing towards enhancement of the company.
+              <div  id="profile">
+                <ng-include ="profile.html">
               </div>
-              <div class="profile-content" id="summary">
-igjkjfkjfjghkj
-                            </div>
+              <div class="profile-content" id="profile">
+                <ng-include ="profile.html">
+              </div>
   		</div>
   	</div>
   </div>
