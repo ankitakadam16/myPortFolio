@@ -9,6 +9,7 @@
  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <script src="index.js"></script>
   <style>
   /***
 User Profile Sidebar by @keenthemes
@@ -124,8 +125,8 @@ body {
 
   </style>
 </head>
-<body>
-  <div class="container">
+<body ng-app="myPortfolio">
+  <div class="container" ng-controller = "firstController">
       <div class="row profile">
   		<div class="col-md-3">
   			<div class="profile-sidebar">
@@ -137,7 +138,7 @@ body {
   				<!-- SIDEBAR USER TITLE -->
   				<div class="profile-usertitle">
   					<div class="profile-usertitle-name">
-  						Ankita Shivanand Kadam
+  						Ankita Shivanand Kadan
   					</div>
   					<div class="profile-usertitle-job">
   						ksankita16@gmail.com
